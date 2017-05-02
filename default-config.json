@@ -1,0 +1,10 @@
+{
+    "storage": "local",
+    "storage_settings": {
+        "path": "/var/lib/escape/releases"
+    },
+    "database": "sqlite",
+    "database_settings": {
+        "path": "/var/lib/escape/registry.db"
+    }
+}
