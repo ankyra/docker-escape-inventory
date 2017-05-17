@@ -15,7 +15,7 @@
 FROM debian:8.7
 
 RUN mkdir -p /etc/escape-registry /var/lib/escape/releases
-COPY archive/escape-registry/escape-registry /usr/bin/escape-registry
+COPY deps/escape-registry/escape-registry /usr/bin/escape-registry
 COPY default-config.json /etc/escape-registry/config.json
 
 CMD escape-registry
