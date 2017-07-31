@@ -21,7 +21,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     mkdir -p /etc/escape-registry /var/lib/escape/releases
 
-COPY deps/escape-registry/escape-registry /usr/bin/escape-registry
+COPY deps/_/escape-registry/escape-registry /usr/bin/escape-registry
 COPY default-config.json /etc/escape-registry/config.json
 
 CMD escape-registry
