@@ -1,7 +1,9 @@
 name: docker-escape-registry
 version: $registry.version
-description: Docker image for the Escape Registry
+description: Docker image for the Escape Registry, which gets pushed to
+    https://hub.docker.com/r/ankyra/escape-registry/
 
+logo: logo.png
 extends:
 - extension-docker-latest
 
