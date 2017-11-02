@@ -19,9 +19,9 @@ RUN apt-get update && \
     apt-get install -y ca-certificates && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
-    mkdir -p /etc/escape-registry /var/lib/escape/releases
+    mkdir -p /etc/escape-inventory /var/lib/escape/releases
 
-COPY deps/_/escape-registry/escape-registry /usr/bin/escape-registry
-COPY default-config.json /etc/escape-registry/config.json
+COPY deps/_/escape-inventory/escape-inventory /usr/bin/escape-inventory
+COPY default-config.json /etc/escape-inventory/config.json
 
-CMD escape-registry
+CMD escape-inventory

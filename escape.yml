@@ -1,18 +1,18 @@
-name: docker-escape-registry
-version: $registry.version
-description: Docker image for the Escape Registry, which gets pushed to
-    https://hub.docker.com/r/ankyra/escape-registry/
+name: docker-escape-inventory
+version: $inventory.version
+description: Docker image for the Escape Inventory, which gets pushed to
+    https://hub.docker.com/r/ankyra/escape-inventory/
 
 logo: logo.png
 extends:
 - extension-docker-latest
 
 depends:
-- escape-registry-latest as registry
+- escape-inventory-latest as inventory
 
 inputs:
-- default: escape-registry
-  id: docker_image
+- id: docker_image
+  default: escape-inventory
 
 includes:
 - Dockerfile
