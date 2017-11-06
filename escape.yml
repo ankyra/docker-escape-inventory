@@ -1,5 +1,5 @@
 name: docker-escape-inventory
-version: $inventory.version
+version: $inventory.metadata.inventory_version
 description: Docker image for the Escape Inventory, which gets pushed to
     https://hub.docker.com/r/ankyra/escape-inventory/
 
@@ -8,7 +8,7 @@ extends:
 - extension-docker-latest
 
 depends:
-- escape-inventory-latest as inventory
+- heist/escape-integration-tests-latest as inventory
 
 inputs:
 - id: docker_image
@@ -18,3 +18,5 @@ includes:
 - Dockerfile
 - default-config.json
 - LICENSE
+
+test: test.sh

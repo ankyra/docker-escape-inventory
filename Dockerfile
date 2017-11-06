@@ -21,7 +21,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     mkdir -p /etc/escape-inventory /var/lib/escape/releases
 
-COPY deps/_/escape-inventory/escape-inventory /usr/bin/escape-inventory
+COPY deps/heist/escape-integration-tests/deps/_/escape-inventory/escape-inventory /usr/bin/escape-inventory
 COPY default-config.json /etc/escape-inventory/config.json
 
 CMD escape-inventory
