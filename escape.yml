@@ -14,6 +14,12 @@ inputs:
 - id: docker_image
   default: escape-inventory
 
+metadata:
+  core_version: $escape.metadata.core_version
+  inventory_version: $escape.metadata.inventory_version
+  release_metadata_api_version: $escape.metadata.release_metadata_api_version
+  tested_with_escape_version: $escape.metadata.escape_version
+
 includes:
 - Dockerfile
 - default-config.json
