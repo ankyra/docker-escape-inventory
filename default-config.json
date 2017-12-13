@@ -3,7 +3,7 @@
     "storage_settings": {
         "path": "/var/lib/escape/releases"
     },
-    "database": "sqlite",
+    "database": "ql",
     "database_settings": {
         "path": "/var/lib/escape/registry.db"
     }
