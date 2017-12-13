@@ -20,4 +20,6 @@ jobs:
     - run: 
         name: Build Escape release
         command: |
-          escape run release --skip-destroy --skip-deploy --skip-if-exists
+          escape run build && escape run test && if [ "$CIRCLE_BRANCH" = "master" ] ; then
+              escape run release --skip-destroy --skip-build --skip-deploy --skip-if-exists
+          fi
